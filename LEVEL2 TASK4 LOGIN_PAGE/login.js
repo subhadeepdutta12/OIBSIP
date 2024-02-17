@@ -11,3 +11,16 @@ function auth(event) {
         return;
     }
 }
+
+let eyeicon = document.getElementById("eyeicon");
+let password = document.getElementById("passkey");
+
+eyeicon.onclick = function(){
+    if(password.type == "password"){
+        password.type = "text";
+        
+    }else{
+        password.type = "password";
+        
+    }
+}
